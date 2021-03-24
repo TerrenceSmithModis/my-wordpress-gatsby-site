@@ -28,8 +28,7 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
       >
         <header>
           <h1 itemProp="headline">{parse(post.title)}</h1>
-
-          <p>{post.date}</p>
+           <p>{post.date}</p>
 
           {/* if we have a featured image for this post let's display it */}
           {featuredImage?.fluid && (
@@ -44,7 +43,7 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
         {!!post.content && (
           <section itemProp="articleBody">{parse(post.content)}</section>
         )}
-
+       
         <hr />
 
         <footer>
